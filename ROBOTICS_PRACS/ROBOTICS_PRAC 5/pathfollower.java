@@ -28,11 +28,11 @@ public class pathfollower {
         {
             int rightValue=ls1.getValue();
             int leftValue=ls2.getValue();
-            if(leftValue<10)
+            if(leftValue < 10)
                 gear.rightArc(0.05);
-            if(rightValue<10)
+            if(rightValue < 10)
                 gear.leftArc(0.05);
-            if(leftValue>10 && rightValue>10)
+            if(leftValue > 10 && rightValue > 10)
                 gear.forward();
         }
     }
