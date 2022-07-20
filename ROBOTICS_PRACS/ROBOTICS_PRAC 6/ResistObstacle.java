@@ -29,24 +29,27 @@ public class ResistObstacle {
             Boolean b2 = t2.isPressed();
             
             if(b1 && b2){
+                g.backward(150);
                 g.right(400);
                 g.forward();
             }
             
             if(b1){
-                g.left(100);
+                g.backward(150);
+                g.left(200);
                 g.forward();
-            } 
+            }
                 
             if(b2){
-                g.right(150);
+                g.backward(150);
+                g.right(200);
                 g.forward();
             }
         }  
     }
     
     static { 
-        RobotContext.setStartPosition(100,100);
+        RobotContext.setStartPosition(100,250);
         RobotContext.useObstacle(RobotContext.channel);
      }
     
